@@ -5,7 +5,7 @@ Ciao ragazzi, è ora di mettere alla prova le vostre conoscenze iniziando a cost
 [x] Creiamo una nuova applicazione Express
 [x] Colleghiamo l’app al db e verifichiamo che tutto funzioni
 [x] Prepariamo una rotta index per ottenere la lista dei film
-[] Prepariamo una rotta show per ottenere i dettagli di un singolo film e le sue recensioni
+[x] Prepariamo una rotta show per ottenere i dettagli di un singolo film e le sue recensioni
 
 **Bonus**
 [] Inserire le immagini nel progetto express
