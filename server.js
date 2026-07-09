@@ -2,7 +2,8 @@ const express = require('express')
 const app = express()
 const port = process.env.API_SERVER_PORT || 3000
 const connection = require('./database/connection')
-const moviesController = require('./controllers/moviesController')
+const moviesRouter = require("./routes/moviesRouter")
+
 
 
 app.use(express.static('public'))
@@ -12,8 +13,7 @@ app.listen(port, () => {
 })
 
 
-app.get('/movies_cover', moviesController.index)
-app.get('/movies_cover/:id', moviesController.show)
+app.use('/movies_cover', moviesRouter)
 
 
 app.get('/', (req, res) => {
